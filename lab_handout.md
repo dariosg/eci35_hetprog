@@ -41,7 +41,8 @@ examples](https://github.com/oneapi-src/oneAPI-samples/).
 # Preliminary notes
 
 Please ask the instruction to grant you permissions to the [class
-repository](git@github.com:dariosg/eci35_hetprog.git).
+repository](https://github.com/dariosg/eci35_hetprog). Ideally, you should fork
+this repo.
 
 ## oneAPI setup
 
