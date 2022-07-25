@@ -40,6 +40,9 @@ examples](https://github.com/oneapi-src/oneAPI-samples/).
 
 # Preliminary notes
 
+Please ask the instruction to grant you permissions to the [class
+repository](git@github.com:dariosg/eci35_hetprog.git).
+
 ## oneAPI setup
 
 This document assumes that the oneAPI toolchain is correctly installed on your
