@@ -152,7 +152,8 @@ previous example.
 ## SYCL Queue device discovery
 
 Using the `get_devices` method, print all available devices in your machine and
-verify where your code is running.
+verify where your code is running. Tip: use the `sycl-ls` command to list the
+available devices.
 
 ### Self-assessment questions
 
@@ -250,6 +251,11 @@ the last kernel will read to store the result into the C vector.
 
 Since pipes are an Intel extension, please include `#include
 <CL/sycl/intel/fpga_extensions.hpp>` in your source file.
+
+In order to compile and not generate the FPGA bitstream, please use the
+`fpga_emu` make target to ensure that your code is correct, and then
+use the report target to check the output. The full bitstream generation can take
+a few hours.
 
 ### Optional
 
