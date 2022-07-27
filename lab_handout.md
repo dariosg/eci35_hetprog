@@ -232,9 +232,31 @@ second arrays can be named as `a` and `result`.
 
 ### Question 1
 
-What is the initiation interval of the code? And what is it establishing its value?
+What is the initiation interval of the code? And what is it establishing its
+value? Note. To obtain this information, please compile the code generating an
+_early image (with optimization report): explicit board_ and open the file
+`mul_array_sycl_report.prj/reports/report.html` and go to the Throughput
+Analysis, Loop Analysis menu.
 
-## SYCL version
+### Question 2
+
+Assuming the initiation interval and frequency from the previous report, what
+would be the execution time for an array with a million of elements?
+
+## SYCL optimized version
+
+Efficient FPGA programs require an initialisation interval of 1. Could you
+please relax the loop-carried dependency with a shift register to speed-up the program.
+
+### Question 1
+
+Repeat the compilation process from the previous version and please find
+the frequency and initiation interval.
+
+### Question 2
+
+Please compare the performance of both versions including the speed-up, if any,
+multiplying the 1 million vector.
 
 # Laboratory 4: Pipes
 
@@ -256,6 +278,11 @@ In order to compile and not generate the FPGA bitstream, please use the
 `fpga_emu` make target to ensure that your code is correct, and then
 use the report target to check the output. The full bitstream generation can take
 a few hours.
+
+### Question 1
+
+Please generate the optimization report and analyse the frequency and
+initiation interval of the code? What could be the possible bottleneck?
 
 ### Optional
 
